@@ -225,29 +225,7 @@ namespace WFtry2 {
 
 		}
 #pragma endregion
-	//private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
-	//	// Крок 1: Отримати текст з textBox1
-	//	String^ inputText = textBox1->Text;
-
-	//	// Крок 2: Розділити текст на слова
-	//	array<String^>^ words = inputText->Split(' ');
-
-	//	// Крок 3: Порахувати кількість слів
-	//	int wordCount = words->Length;
-
-	//	// Крок 4: Вивести кількість слів у label2
-	//	label2->Text = wordCount.ToString();
-
-	//	// Крок 5: Змінити колір тексту у label2, якщо кількість слів більша за 100
-	//	if (wordCount > 2) {
-	//		label2->ForeColor = System::Drawing::Color::Red;
-	//	}
-	//	else {
-	//		// Якщо кількість слів менша або дорівнює 100, використовуємо стандартний колір
-	//		label2->ForeColor = System::Drawing::SystemColors::ControlText;
-	//	}
-	//}
-
+	
 	public: System::Void CountWordsAndDisplay() {
 
 	}
@@ -260,10 +238,6 @@ namespace WFtry2 {
 		dataGridView1 = source;
 
 	}
-
-	/*private: System::Void dataGridView1_SelectionChanged(System::Object^ sender, System::EventArgs^ e) {
-		
-	}*/
 
 	void SetDataGridView(DataGridView^ source) {
 		// Очищаємо дані в dataGridViewDestination перед копіюванням
@@ -282,8 +256,6 @@ namespace WFtry2 {
 			dataGridView1->Rows->Add(newRow);
 		}
 	}
-
-
 
 	private: System::Void dataGridView1_RowHeaderMouseClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellMouseEventArgs^ e) {
 		if (dataGridView1->SelectedRows->Count > 0) { // Перевіряємо, чи є виділений рядок
