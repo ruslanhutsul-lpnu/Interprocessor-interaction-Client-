@@ -40,7 +40,6 @@ public:
         closesocket(ConnectSocket);
     }
 
-
     void ConnectToServer() {
         WSADATA wsaData;
         struct addrinfo* result = NULL,
@@ -157,8 +156,7 @@ public:
         if (iResult > 0) {
             recvbuf[iResult] = '\0';
 
-            // Конвертація масиву символів у рядок
-            System::Text::Encoding^ enc = System::Text::Encoding::UTF8; // Використовуйте відповідний кодувальник
+            System::Text::Encoding^ enc = System::Text::Encoding::UTF8;
             return gcnew String(recvbuf, 0, iResult, enc);
         }
         else if (iResult == 0) {
