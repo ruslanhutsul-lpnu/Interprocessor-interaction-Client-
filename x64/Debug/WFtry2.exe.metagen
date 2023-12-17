@@ -1,0 +1,89 @@
+  WFtry2.Form1.resources - Embedded, ContainedInManifestFile, 
+  WFtry2.Form2.resources - Embedded, ContainedInManifestFile, 
+  WFtry2.Form3.resources - Embedded, ContainedInManifestFile, 
+  WFtry2.moderator.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly WFtry2, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class WFtry2.moderator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    DataPassedHandler2 DataPassedEvent2: SpecialName
+    DataPassedHandler DataPassedEvent: SpecialName
+  Methods:
+    add_DataPassedEvent(DataPassedHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_DataPassedEvent(DataPassedHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_DataPassedEvent2(DataPassedHandler2): PrivateScope, Public, HideBySig, SpecialName
+    remove_DataPassedEvent2(DataPassedHandler2): PrivateScope, Public, HideBySig, SpecialName
+    CountWordsAndDisplay(): PrivateScope, Public, HideBySig
+    GetDataGridView(): PrivateScope, Public, HideBySig
+    SSetDataGridView(DataGridView): PrivateScope, Public, HideBySig
+    SetDataGridView(DataGridView): PrivateScope, Public, HideBySig
+Class WFtry2.moderator+DataPassedHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(String, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class WFtry2.moderator+DataPassedHandler2: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(String, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class WFtry2.MyForm1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    DataPassedHandler DataPassedEvent: SpecialName
+  Methods:
+    add_DataPassedEvent(DataPassedHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_DataPassedEvent(DataPassedHandler): PrivateScope, Public, HideBySig, SpecialName
+    GetTextBox1Value(): PrivateScope, Public, HideBySig
+    GetTextBox2Value(): PrivateScope, Public, HideBySig
+Class WFtry2.MyForm1+DataPassedHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(String, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class WFtry2.Form3: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Events:
+    DataPassedHandler DataPassedEvent: SpecialName
+  Methods:
+    add_DataPassedEvent(DataPassedHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_DataPassedEvent(DataPassedHandler): PrivateScope, Public, HideBySig, SpecialName
+    GetTextBox1Value(): PrivateScope, Public, HideBySig
+    GetTextBox2Value(): PrivateScope, Public, HideBySig
+Class WFtry2.Form3+DataPassedHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(String): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(String, AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class WFtry2.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    InitializeComponent(): PrivateScope, Public, HideBySig
+    MyForm_Load(Object, EventArgs): PrivateScope, Public, HideBySig
+    OnTimerTick(Object, ElapsedEventArgs): PrivateScope, Public, HideBySig

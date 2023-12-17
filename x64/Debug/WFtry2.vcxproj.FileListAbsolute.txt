@@ -1,0 +1,41 @@
+E:\Visual Studio\WFtry2\x64\Debug\WFtry2.vcxproj.AssemblyReference.cache
+E:\Visual Studio\WFtry2\x64\Debug\WFtry2.vcxproj.SuggestedBindingRedirects.cache
+E:\Visual Studio\WFtry2\x64\Debug\WFtry2.exe
+E:\Visual Studio\WFtry2\x64\Debug\WFtry2.MyForm.resources
+E:\Visual Studio\WFtry2\x64\Debug\WFtry2.vcxproj.GenerateResource.cache
+C:\Users\Tania\Desktop\WFtry2\x64\Debug\WFtry2.vcxproj.AssemblyReference.cache
+C:\Users\Tania\Desktop\WFtry2\x64\Debug\WFtry2.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\Tania\Desktop\WFtry2\x64\Debug\WFtry2.Form1.resources
+C:\Users\Tania\Desktop\WFtry2\x64\Debug\WFtry2.Form2.resources
+C:\Users\Tania\Desktop\WFtry2\x64\Debug\WFtry2.vcxproj.GenerateResource.cache
+C:\Users\Tania\Desktop\WFtry2\x64\Debug\WFtry2.exe
+C:\Users\Admin\Desktop\2course\Операційні_системи\лаби\лаб9\Client\x64\Debug\WFtry2.vcxproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\2course\Операційні_системи\лаби\лаб9\Client\x64\Debug\WFtry2.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Desktop\2course\Операційні_системи\лаби\лаб9\Client\x64\Debug\WFtry2.Form1.resources
+C:\Users\Admin\Desktop\2course\Операційні_системи\лаби\лаб9\Client\x64\Debug\WFtry2.Form2.resources
+C:\Users\Admin\Desktop\2course\Операційні_системи\лаби\лаб9\Client\x64\Debug\WFtry2.vcxproj.GenerateResource.cache
+C:\Users\Admin\Desktop\2course\Операційні_системи\лаби\лаб9\Client\x64\Debug\WFtry2.exe
+C:\Users\Admin\Desktop\2course\Операційні_системи\лаби\лаб9\Client\x64\Debug\WFtry2.Form3.resources
+C:\Users\Tania\Desktop\лаб9\Client\x64\Debug\WFtry2.vcxproj.AssemblyReference.cache
+C:\Users\Tania\Desktop\лаб9\Client\x64\Debug\WFtry2.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\Tania\Desktop\лаб9\Client\x64\Debug\WFtry2.Form1.resources
+C:\Users\Tania\Desktop\лаб9\Client\x64\Debug\WFtry2.Form2.resources
+C:\Users\Tania\Desktop\лаб9\Client\x64\Debug\WFtry2.Form3.resources
+C:\Users\Tania\Desktop\лаб9\Client\x64\Debug\WFtry2.vcxproj.GenerateResource.cache
+C:\Users\Tania\Desktop\лаб9\Client\x64\Debug\WFtry2.exe
+C:\Users\Tania\Desktop\лаб9\Client\x64\Debug\WFtry2.moderator.resources
+C:\Users\Admin\Desktop\Нова папка\лаб9\Client\x64\Debug\WFtry2.vcxproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Нова папка\лаб9\Client\x64\Debug\WFtry2.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Desktop\Нова папка\лаб9\Client\x64\Debug\WFtry2.Form1.resources
+C:\Users\Admin\Desktop\Нова папка\лаб9\Client\x64\Debug\WFtry2.Form2.resources
+C:\Users\Admin\Desktop\Нова папка\лаб9\Client\x64\Debug\WFtry2.Form3.resources
+C:\Users\Admin\Desktop\Нова папка\лаб9\Client\x64\Debug\WFtry2.moderator.resources
+C:\Users\Admin\Desktop\Нова папка\лаб9\Client\x64\Debug\WFtry2.vcxproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Нова папка\лаб9\Client\x64\Debug\WFtry2.exe
+B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.vcxproj.AssemblyReference.cache
+B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.Form1.resources
+B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.Form2.resources
+B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.Form3.resources
+B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.moderator.resources
+B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.vcxproj.GenerateResource.cache
+B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.exe
