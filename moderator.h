@@ -53,6 +53,7 @@ namespace WFtry2 {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Message;
 	private: System::Windows::Forms::RichTextBox^ richTextBox1;
 	private: System::Windows::Forms::PictureBox^ pictureBox3;
+	private: System::Windows::Forms::Panel^ panel1;
 
 
 	public:  delegate void DataPassedHandler(String^ data);
@@ -83,20 +84,22 @@ namespace WFtry2 {
 			this->Message = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->richTextBox1 = (gcnew System::Windows::Forms::RichTextBox());
 			this->pictureBox3 = (gcnew System::Windows::Forms::PictureBox());
+			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
+			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// button1
 			// 
-			this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(55)), static_cast<System::Int32>(static_cast<System::Byte>(140)),
-				static_cast<System::Int32>(static_cast<System::Byte>(62)));
-			this->button1->Font = (gcnew System::Drawing::Font(L"Century", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(255)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->button1->Font = (gcnew System::Drawing::Font(L"Century", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button1->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->button1->Location = System::Drawing::Point(101, 460);
+			this->button1->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button1->Location = System::Drawing::Point(42, 428);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(98, 49);
+			this->button1->Size = System::Drawing::Size(163, 49);
 			this->button1->TabIndex = 4;
 			this->button1->Text = L"Accept";
 			this->button1->UseVisualStyleBackColor = false;
@@ -104,14 +107,14 @@ namespace WFtry2 {
 			// 
 			// button_reject
 			// 
-			this->button_reject->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(245)), static_cast<System::Int32>(static_cast<System::Byte>(80)),
-				static_cast<System::Int32>(static_cast<System::Byte>(71)));
-			this->button_reject->Font = (gcnew System::Drawing::Font(L"Century", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button_reject->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+				static_cast<System::Int32>(static_cast<System::Byte>(128)));
+			this->button_reject->Font = (gcnew System::Drawing::Font(L"Century", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button_reject->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->button_reject->Location = System::Drawing::Point(241, 460);
+			this->button_reject->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button_reject->Location = System::Drawing::Point(233, 428);
 			this->button_reject->Name = L"button_reject";
-			this->button_reject->Size = System::Drawing::Size(104, 49);
+			this->button_reject->Size = System::Drawing::Size(163, 49);
 			this->button_reject->TabIndex = 5;
 			this->button_reject->Text = L"Reject";
 			this->button_reject->UseVisualStyleBackColor = false;
@@ -122,11 +125,12 @@ namespace WFtry2 {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Century", 11, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->Location = System::Drawing::Point(149, 9);
+			this->label3->Location = System::Drawing::Point(147, 13);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(196, 23);
+			this->label3->Size = System::Drawing::Size(157, 18);
 			this->label3->TabIndex = 3;
 			this->label3->Text = L"Incoming message:";
+			this->label3->Click += gcnew System::EventHandler(this, &moderator::label3_Click);
 			// 
 			// dataGridView1
 			// 
@@ -135,7 +139,7 @@ namespace WFtry2 {
 				this->Time, this->Customer,
 					this->Message
 			});
-			this->dataGridView1->Location = System::Drawing::Point(12, 48);
+			this->dataGridView1->Location = System::Drawing::Point(22, 48);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->ReadOnly = true;
 			this->dataGridView1->RowHeadersWidth = 51;
@@ -170,7 +174,7 @@ namespace WFtry2 {
 			// 
 			// richTextBox1
 			// 
-			this->richTextBox1->Location = System::Drawing::Point(12, 249);
+			this->richTextBox1->Location = System::Drawing::Point(22, 236);
 			this->richTextBox1->Name = L"richTextBox1";
 			this->richTextBox1->ReadOnly = true;
 			this->richTextBox1->Size = System::Drawing::Size(435, 189);
@@ -180,34 +184,44 @@ namespace WFtry2 {
 			// pictureBox3
 			// 
 			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
-			this->pictureBox3->Location = System::Drawing::Point(119, 9);
+			this->pictureBox3->Location = System::Drawing::Point(117, 13);
 			this->pictureBox3->Name = L"pictureBox3";
-			this->pictureBox3->Size = System::Drawing::Size(24, 31);
+			this->pictureBox3->Size = System::Drawing::Size(24, 30);
 			this->pictureBox3->TabIndex = 14;
 			this->pictureBox3->TabStop = false;
 			// 
+			// panel1
+			// 
+			this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)),
+				static_cast<System::Int32>(static_cast<System::Byte>(224)));
+			this->panel1->Controls->Add(this->pictureBox3);
+			this->panel1->Controls->Add(this->label3);
+			this->panel1->Controls->Add(this->button1);
+			this->panel1->Controls->Add(this->button_reject);
+			this->panel1->Location = System::Drawing::Point(12, 12);
+			this->panel1->Name = L"panel1";
+			this->panel1->Size = System::Drawing::Size(453, 565);
+			this->panel1->TabIndex = 15;
+			// 
 			// moderator
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(9, 18);
+			this->AutoScaleDimensions = System::Drawing::SizeF(7, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(193)), static_cast<System::Int32>(static_cast<System::Byte>(227)),
-				static_cast<System::Int32>(static_cast<System::Byte>(224)));
-			this->ClientSize = System::Drawing::Size(490, 589);
-			this->Controls->Add(this->pictureBox3);
+			this->BackColor = System::Drawing::Color::White;
+			this->ClientSize = System::Drawing::Size(475, 506);
 			this->Controls->Add(this->richTextBox1);
 			this->Controls->Add(this->dataGridView1);
-			this->Controls->Add(this->button_reject);
-			this->Controls->Add(this->button1);
-			this->Controls->Add(this->label3);
+			this->Controls->Add(this->panel1);
 			this->Font = (gcnew System::Drawing::Font(L"Century", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->Margin = System::Windows::Forms::Padding(4, 3, 4, 3);
 			this->Name = L"moderator";
-			this->Text = L"moderator";
+			this->Text = L"Moderator";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->EndInit();
+			this->panel1->ResumeLayout(false);
+			this->panel1->PerformLayout();
 			this->ResumeLayout(false);
-			this->PerformLayout();
 
 		}
 #pragma endregion
@@ -325,6 +339,8 @@ private: System::Void button_reject_Click(System::Object^ sender, System::EventA
 		dataGridView1->Rows->RemoveAt(selectedIndex);
 		richTextBox1->Clear();
 	}
+}
+private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

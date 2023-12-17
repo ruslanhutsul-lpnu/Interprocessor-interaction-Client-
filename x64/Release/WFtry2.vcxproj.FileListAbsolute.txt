@@ -1,0 +1,7 @@
+C:\9 OS\Client\x64\Release\WFtry2.vcxproj.AssemblyReference.cache
+C:\9 OS\Client\x64\Release\WFtry2.Form1.resources
+C:\9 OS\Client\x64\Release\WFtry2.Form2.resources
+C:\9 OS\Client\x64\Release\WFtry2.Form3.resources
+C:\9 OS\Client\x64\Release\WFtry2.moderator.resources
+C:\9 OS\Client\x64\Release\WFtry2.vcxproj.GenerateResource.cache
+C:\9 OS\Client\x64\Release\WFtry2.exe

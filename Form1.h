@@ -59,6 +59,8 @@ namespace WFtry2 {
 	private: System::Windows::Forms::ToolStripMenuItem^ logOutToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ loginToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ signToolStripMenuItem;
+	private: System::Windows::Forms::Panel^ panel2;
+	private: System::Windows::Forms::Panel^ panel3;
 	private: System::Windows::Forms::RichTextBox^ richTextBox1;
 	/*private: System::Windows::Forms::ToolStripMenuItem^ loginToolStripMenuItem;*/
 	public:
@@ -94,13 +96,18 @@ namespace WFtry2 {
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->timer = (gcnew System::Timers::Timer());
+			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->panel3 = (gcnew System::Windows::Forms::Panel());
 			this->menuStrip1->SuspendLayout();
 			this->panel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->timer))->BeginInit();
+			this->panel2->SuspendLayout();
+			this->panel3->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// menuStrip1
 			// 
+			this->menuStrip1->BackColor = System::Drawing::Color::WhiteSmoke;
 			this->menuStrip1->ImageScalingSize = System::Drawing::Size(24, 24);
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
 				this->loginToolStripMenuItem,
@@ -108,7 +115,7 @@ namespace WFtry2 {
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(776, 26);
+			this->menuStrip1->Size = System::Drawing::Size(837, 24);
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			this->menuStrip1->ItemClicked += gcnew System::Windows::Forms::ToolStripItemClickedEventHandler(this, &MyForm::menuStrip1_ItemClicked);
@@ -117,10 +124,9 @@ namespace WFtry2 {
 			// 
 			this->loginToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->loginToolStripMenuItem->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(80)),
-				static_cast<System::Int32>(static_cast<System::Byte>(101)), static_cast<System::Int32>(static_cast<System::Byte>(115)));
+			this->loginToolStripMenuItem->ForeColor = System::Drawing::Color::Black;
 			this->loginToolStripMenuItem->Name = L"loginToolStripMenuItem";
-			this->loginToolStripMenuItem->Size = System::Drawing::Size(62, 22);
+			this->loginToolStripMenuItem->Size = System::Drawing::Size(51, 20);
 			this->loginToolStripMenuItem->Text = L"LogIn";
 			this->loginToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::loginToolStripMenuItem_Click_1);
 			// 
@@ -128,10 +134,9 @@ namespace WFtry2 {
 			// 
 			this->signToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->signToolStripMenuItem->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(80)),
-				static_cast<System::Int32>(static_cast<System::Byte>(101)), static_cast<System::Int32>(static_cast<System::Byte>(115)));
+			this->signToolStripMenuItem->ForeColor = System::Drawing::Color::Black;
 			this->signToolStripMenuItem->Name = L"signToolStripMenuItem";
-			this->signToolStripMenuItem->Size = System::Drawing::Size(53, 22);
+			this->signToolStripMenuItem->Size = System::Drawing::Size(43, 20);
 			this->signToolStripMenuItem->Text = L"Sign";
 			this->signToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::signToolStripMenuItem_Click);
 			// 
@@ -139,100 +144,110 @@ namespace WFtry2 {
 			// 
 			this->logOutToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->logOutToolStripMenuItem->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(80)),
-				static_cast<System::Int32>(static_cast<System::Byte>(101)), static_cast<System::Int32>(static_cast<System::Byte>(115)));
+			this->logOutToolStripMenuItem->ForeColor = System::Drawing::Color::Black;
 			this->logOutToolStripMenuItem->Name = L"logOutToolStripMenuItem";
-			this->logOutToolStripMenuItem->Size = System::Drawing::Size(75, 22);
+			this->logOutToolStripMenuItem->Size = System::Drawing::Size(60, 20);
 			this->logOutToolStripMenuItem->Text = L"LogOut";
 			this->logOutToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::logOutToolStripMenuItem_Click);
 			// 
 			// panel1
 			// 
-			this->panel1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(158)), static_cast<System::Int32>(static_cast<System::Byte>(202)),
-				static_cast<System::Int32>(static_cast<System::Byte>(219)));
+			this->panel1->BackColor = System::Drawing::Color::WhiteSmoke;
 			this->panel1->Controls->Add(this->richTextBox1);
 			this->panel1->Controls->Add(this->label1);
-			this->panel1->Location = System::Drawing::Point(360, 53);
+			this->panel1->Font = (gcnew System::Drawing::Font(L"Century", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->panel1->Location = System::Drawing::Point(409, 53);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(404, 477);
+			this->panel1->Size = System::Drawing::Size(404, 357);
 			this->panel1->TabIndex = 1;
 			// 
 			// richTextBox1
 			// 
-			this->richTextBox1->Location = System::Drawing::Point(40, 45);
+			this->richTextBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->richTextBox1->BackColor = System::Drawing::SystemColors::HighlightText;
+			this->richTextBox1->Font = (gcnew System::Drawing::Font(L"Century", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->richTextBox1->ForeColor = System::Drawing::SystemColors::WindowText;
+			this->richTextBox1->Location = System::Drawing::Point(25, 45);
 			this->richTextBox1->Name = L"richTextBox1";
-			this->richTextBox1->Size = System::Drawing::Size(343, 405);
+			this->richTextBox1->Size = System::Drawing::Size(358, 285);
 			this->richTextBox1->TabIndex = 1;
 			this->richTextBox1->Text = L"";
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->BackColor = System::Drawing::Color::Transparent;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Century", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(146, 14);
+			this->label1->ForeColor = System::Drawing::Color::Black;
+			this->label1->Location = System::Drawing::Point(137, 14);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(99, 18);
+			this->label1->Size = System::Drawing::Size(143, 23);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Latest tweets";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Century Gothic", 10, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label2->Font = (gcnew System::Drawing::Font(L"Century", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(54)), static_cast<System::Int32>(static_cast<System::Byte>(90)),
-				static_cast<System::Int32>(static_cast<System::Byte>(117)));
-			this->label2->Location = System::Drawing::Point(21, 53);
+			this->label2->ForeColor = System::Drawing::Color::Black;
+			this->label2->Location = System::Drawing::Point(10, 14);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(46, 19);
+			this->label2->Size = System::Drawing::Size(62, 23);
 			this->label2->TabIndex = 2;
-			this->label2->Text = L"I am";
+			this->label2->Text = L"User:";
+			this->label2->Click += gcnew System::EventHandler(this, &MyForm::label2_Click);
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Century Gothic", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label3->Font = (gcnew System::Drawing::Font(L"Century", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(54)), static_cast<System::Int32>(static_cast<System::Byte>(90)),
-				static_cast<System::Int32>(static_cast<System::Byte>(117)));
-			this->label3->Location = System::Drawing::Point(80, 53);
+			this->label3->ForeColor = System::Drawing::Color::Lime;
+			this->label3->Location = System::Drawing::Point(188, 14);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(96, 21);
+			this->label3->Size = System::Drawing::Size(112, 23);
 			this->label3->TabIndex = 3;
 			this->label3->Text = L"Undefined";
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(25, 177);
+			this->textBox2->BackColor = System::Drawing::SystemColors::HighlightText;
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->textBox2->Location = System::Drawing::Point(13, 53);
 			this->textBox2->Multiline = true;
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(298, 159);
+			this->textBox2->Size = System::Drawing::Size(339, 159);
 			this->textBox2->TabIndex = 4;
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label4->Font = (gcnew System::Drawing::Font(L"Century", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label4->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(54)), static_cast<System::Int32>(static_cast<System::Byte>(90)),
-				static_cast<System::Int32>(static_cast<System::Byte>(117)));
-			this->label4->Location = System::Drawing::Point(34, 144);
+			this->label4->ForeColor = System::Drawing::Color::Black;
+			this->label4->Location = System::Drawing::Point(11, 17);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(97, 18);
+			this->label4->Size = System::Drawing::Size(255, 23);
 			this->label4->TabIndex = 5;
-			this->label4->Text = L"What\'s new\?";
+			this->label4->Text = L"Any fresh developments\?";
+			this->label4->Click += gcnew System::EventHandler(this, &MyForm::label4_Click);
 			// 
 			// button1
 			// 
-			this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(106)), static_cast<System::Int32>(static_cast<System::Byte>(171)),
-				static_cast<System::Int32>(static_cast<System::Byte>(108)));
-			this->button1->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button1->BackColor = System::Drawing::Color::LightSlateGray;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Century", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button1->ForeColor = System::Drawing::Color::White;
-			this->button1->Location = System::Drawing::Point(127, 355);
+			this->button1->ForeColor = System::Drawing::Color::Black;
+			this->button1->Location = System::Drawing::Point(106, 234);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(86, 46);
+			this->button1->Size = System::Drawing::Size(160, 44);
 			this->button1->TabIndex = 6;
 			this->button1->Text = L"Post";
 			this->button1->UseVisualStyleBackColor = false;
@@ -241,20 +256,42 @@ namespace WFtry2 {
 			// timer
 			// 
 			this->timer->Enabled = true;
+			this->timer->Interval = 1000;
 			this->timer->SynchronizingObject = this;
+			// 
+			// panel2
+			// 
+			this->panel2->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->panel2->Controls->Add(this->textBox2);
+			this->panel2->Controls->Add(this->button1);
+			this->panel2->Controls->Add(this->label4);
+			this->panel2->Location = System::Drawing::Point(25, 114);
+			this->panel2->Name = L"panel2";
+			this->panel2->Size = System::Drawing::Size(367, 296);
+			this->panel2->TabIndex = 2;
+			// 
+			// panel3
+			// 
+			this->panel3->BackColor = System::Drawing::Color::WhiteSmoke;
+			this->panel3->Controls->Add(this->label3);
+			this->panel3->Controls->Add(this->label2);
+			this->panel3->ForeColor = System::Drawing::SystemColors::ButtonShadow;
+			this->panel3->Location = System::Drawing::Point(25, 53);
+			this->panel3->Name = L"panel3";
+			this->panel3->Size = System::Drawing::Size(367, 44);
+			this->panel3->TabIndex = 7;
 			// 
 			// MyForm
 			// 
-			this->ClientSize = System::Drawing::Size(776, 558);
-			this->Controls->Add(this->button1);
-			this->Controls->Add(this->label4);
-			this->Controls->Add(this->textBox2);
-			this->Controls->Add(this->label3);
-			this->Controls->Add(this->label2);
+			this->BackColor = System::Drawing::Color::Silver;
+			this->ClientSize = System::Drawing::Size(837, 423);
+			this->Controls->Add(this->panel3);
+			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->menuStrip1);
 			this->Font = (gcnew System::Drawing::Font(L"Century Gothic", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
+			this->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MyForm";
 			this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &MyForm::MyForm_FormClosing_1);
@@ -263,9 +300,12 @@ namespace WFtry2 {
 			this->panel1->ResumeLayout(false);
 			this->panel1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->timer))->EndInit();
+			this->panel2->ResumeLayout(false);
+			this->panel2->PerformLayout();
+			this->panel3->ResumeLayout(false);
+			this->panel3->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
-
 			this->Load += gcnew EventHandler(this, &MyForm::MyForm_Load);
 			System::Timers::Timer^ timer = gcnew System::Timers::Timer();
 			timer->Interval = 1000; // інтервал в мілісекундах
@@ -560,6 +600,10 @@ private: System::Void logOutToolStripMenuItem_Click(System::Object^ sender, Syst
 	label3->Text = "Undefined";
 	client->SetAccess(false);
 	client->DisconnectFromServer();
+}
+private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\9 OS\Client\x64\Debug\WFtry2.exe</FullPath>
+      <FullPath>C:\9 OS\Client\x64\Release\WFtry2.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

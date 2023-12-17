@@ -32,10 +32,17 @@ C:\Users\Admin\Desktop\Нова папка\лаб9\Client\x64\Debug\WFtry2.Form3
 C:\Users\Admin\Desktop\Нова папка\лаб9\Client\x64\Debug\WFtry2.moderator.resources
 C:\Users\Admin\Desktop\Нова папка\лаб9\Client\x64\Debug\WFtry2.vcxproj.GenerateResource.cache
 C:\Users\Admin\Desktop\Нова папка\лаб9\Client\x64\Debug\WFtry2.exe
-B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.vcxproj.AssemblyReference.cache
-B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.Form1.resources
-B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.Form2.resources
-B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.Form3.resources
-B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.moderator.resources
-B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.vcxproj.GenerateResource.cache
-B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.exe
+B:\VSProjects\LR9_OS_2\Client\x64\Debug\WFtry2.vcxproj.AssemblyReference.cache
+B:\VSProjects\LR9_OS_2\Client\x64\Debug\WFtry2.Form1.resources
+B:\VSProjects\LR9_OS_2\Client\x64\Debug\WFtry2.Form2.resources
+B:\VSProjects\LR9_OS_2\Client\x64\Debug\WFtry2.Form3.resources
+B:\VSProjects\LR9_OS_2\Client\x64\Debug\WFtry2.moderator.resources
+B:\VSProjects\LR9_OS_2\Client\x64\Debug\WFtry2.vcxproj.GenerateResource.cache
+B:\VSProjects\LR9_OS_2\Client\x64\Debug\WFtry2.exe
+C:\9 OS\Client\x64\Debug\WFtry2.vcxproj.AssemblyReference.cache
+C:\9 OS\Client\x64\Debug\WFtry2.Form1.resources
+C:\9 OS\Client\x64\Debug\WFtry2.Form2.resources
+C:\9 OS\Client\x64\Debug\WFtry2.Form3.resources
+C:\9 OS\Client\x64\Debug\WFtry2.moderator.resources
+C:\9 OS\Client\x64\Debug\WFtry2.vcxproj.GenerateResource.cache
+C:\9 OS\Client\x64\Debug\WFtry2.exe

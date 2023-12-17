@@ -1,18 +1,14 @@
 ﻿  Form1.cpp
-B:\VSProjects\LR9_OS\Client\Client.h(136,58): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Form1.cpp')
+C:\9 OS\Client\Client.h(136,58): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Form1.cpp")
   
   Form2.cpp
-B:\VSProjects\LR9_OS\Client\Client.h(136,58): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Form2.cpp')
+C:\9 OS\Client\Client.h(136,58): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  (компиляция исходного файла "Form2.cpp")
   
-  Form3.cpp
-B:\VSProjects\LR9_OS\Client\Client.h(136,58): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file 'Form3.cpp')
-  
-  Generating Code...
-B:\VSProjects\LR9_OS\Client\Form3.h(211): warning C4715: 'WFtry2::Form3::IsUserInFile': not all control paths return a value
-B:\VSProjects\LR9_OS\Client\Form3.h(211): warning C4715: 'WFtry2::Form3::IsUserInFile': not all control paths return a value
-B:\VSProjects\LR9_OS\Client\Form1.h(371): warning C4715: 'WFtry2::MyForm::CheckMessenge': not all control paths return a value
-  Form1.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
-  WFtry2.vcxproj -> B:\VSProjects\LR9_OS\Client\x64\Debug\WFtry2.exe
+  moderator.cpp
+  Создание кода...
+C:\9 OS\Client\Form3.h(240): warning C4715: WFtry2::Form3::IsUserInFile: значение возвращается не при всех путях выполнения
+C:\9 OS\Client\Form1.h(411): warning C4715: WFtry2::MyForm::CheckMessenge: значение возвращается не при всех путях выполнения
+  Form1.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  WFtry2.vcxproj -> C:\9 OS\Client\x64\Debug\WFtry2.exe
