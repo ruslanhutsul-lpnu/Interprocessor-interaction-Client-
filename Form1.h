@@ -315,12 +315,7 @@ namespace WFtry2 {
 		}
 #pragma endregion
 
-		//this->Load += gcnew EventHandler(this, &MyForm::MyForm_Load);
-		//System::Timers::Timer^ timer = gcnew System::Timers::Timer();
-		//timer->Interval = 1000; // інтервал в мілісекундах
-		//timer->Elapsed += gcnew ElapsedEventHandler(this, &MyForm::OnTimerTick);
-		//timer->AutoReset = true; // встановлення автоматичного перезапуску таймера
-		//timer->Enabled = true;
+
 		void MyForm_Load(Object^ sender, EventArgs^ e) {
 			client = gcnew Client();
 			// Запускаємо сервер у окремому потоці
@@ -340,9 +335,6 @@ namespace WFtry2 {
 			
 		}
 
-		/*void UpdateTextBox(String^ message) {
-			textBox1->Text = message;
-		}*/
 
 
 
@@ -410,23 +402,6 @@ namespace WFtry2 {
 		return 1;
 	}
 
-		   //void DDD(DataGridView^ dataGridView) {
-			  // String^ dataAsString = "";
-
-			  // // Проходимо по всіх рядках у dataGridView1
-			  // for each (DataGridViewRow ^ row in dataGridView->Rows) {
-				 //  if (row->IsNewRow) continue;
-
-
-				 //  for each (DataGridViewCell ^ cell in row->Cells) {
-
-					//   dataAsString += cell->Value->ToString() + " ";
-				 //  }
-
-				 //  dataAsString += "\n";
-			  // }
-			  ///* MessageBox::Show(dataAsString);*/
-		   //}
 
 		   DataGridView^ FillDataGridViewFromString(String^ dataAsString) {
 			   DataGridView^ dataGridView;
@@ -448,12 +423,6 @@ namespace WFtry2 {
 		   }
 
 
-
-
-
-
-
-
 		   String^ JoinWordsFromIndex(array<String^>^ words, int startIndex) {
 			   if (startIndex >= words->Length) {
 				   return ""; // Повернути порожній рядок, якщо початковий індекс виходить за межі масиву
@@ -469,11 +438,6 @@ namespace WFtry2 {
 
 	
 
-		   //System::Void MyForm_FormClosing(System::Object^ sender, System::Windows::Forms::FormClosingEventArgs^ e) {
-			  // // Виклик методу відключення клієнтів від сервера
-			  // client->DisconnectFromServer();
-
-		   //}
 
 	private: void CreateModer() {
 		moderatorForm = gcnew moderator();
@@ -500,7 +464,6 @@ namespace WFtry2 {
 			serverThread->Start();
 			/*MessageBox::Show("NO CONNECT");*/
 		}
-		/*MessageBox::Show("YE CONNECT");*/
 
 		String^ message = "LOGIN" + " " + input;
 		msclr::interop::marshal_context context;
@@ -521,17 +484,12 @@ namespace WFtry2 {
 	}
 
 
-
 	private: System::Void button_sign_Click(System::Object^ sender, System::EventArgs^ e) {
 		Form3^ form3 = gcnew Form3;
 		form3->DataPassedEvent += gcnew Form3::DataPassedHandler(this, &MyForm::SignMessage);
 
 		form3->ShowDialog();
 		form3->Close();
-
-
-
-		/*label3->Text = form3->GetTextBox1Value() + " " + form3->GetTextBox2Value();*/
 	}
 	private: System::Void button_sent_Click(System::Object^ sender, System::EventArgs^ e) {
 		client->SendToServer("Test messange");
